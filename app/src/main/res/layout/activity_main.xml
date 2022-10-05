@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <Button
+        android:id="@+id/buttonScan"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/custom_button"
+        android:text="Scan"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSlots"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button2"
+        android:text="Available Bike Slots"
+        android:textAllCaps="false"
+        android:textColor="#485784"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonScan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonScan"
+        app:layout_constraintTop_toBottomOf="@+id/buttonScan" />
+
+    <Button
+        android:id="@+id/buttonStatus"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_button"
+        android:text="Status"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSlots"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonSlots"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSlots" />
+</androidx.constraintlayout.widget.ConstraintLayout>
