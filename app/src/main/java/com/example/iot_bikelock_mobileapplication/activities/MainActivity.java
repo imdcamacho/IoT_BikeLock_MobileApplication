@@ -31,13 +31,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.buttonScan:
-                    startActivity(new Intent(MainActivity.this, ScanActivity.class));
+//                    startActivity(new Intent(MainActivity.this, ScanActivity.class));
+                    Intent QRScannerIntent = new Intent(MainActivity.this, ScanActivity.class);
+                    startActivity(QRScannerIntent);
                 break;
             case R.id.buttonSlots:
-                startActivity(new Intent(MainActivity.this, BikeSlotsActivity.class));
+                    startActivity(new Intent(MainActivity.this, BikeSlotsActivity.class));
                 break;
             case R.id.buttonStatus:
-                startActivity(new Intent(MainActivity.this, StatusActivity.class));
+                    startActivity(new Intent(MainActivity.this, StatusActivity.class));
                 break;
         }
     }

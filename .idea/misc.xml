@@ -8,16 +8,21 @@
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/drawable/custom_button2.xml" value="0.101" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/drawable/custom_button3.xml" value="0.226" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.226" />
+        <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/drawable/rectangle_1.xml" value="0.292" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/drawable/rectangle_getstarted.xml" value="0.208" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.2242302543507363" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout-w936dp/activity_login.xml" value="0.26171875" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/activity_bike_slots.xml" value="0.3489583333333333" />
-        <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/activity_qrcode_scan.xml" value="0.33489583333333334" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/activity_scan.xml" value="0.1703125" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/activity_status.xml" value="0.33" />
+        <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/bu_error.xml" value="0.33" />
+        <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/bu_success.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/fragment_status_1.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/get_started.xml" value="0.31521739130434784" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/list_slots.xml" value="0.33" />
+        <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/rop_success.xml" value="0.33" />
         <entry key="..\:/Users/Dave Camacho/IoT_BikeLock_MobileApplication/app/src/main/res/layout/slide_layout.xml" value="0.33" />
       </map>
     </option>
