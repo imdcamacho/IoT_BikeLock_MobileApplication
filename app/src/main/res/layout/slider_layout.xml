@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f8d5a3"
+    android:orientation="vertical"
+    app:flow_horizontalAlign="center">
+
+    <TextView
+        android:id="@+id/secure_a_bi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="15dp"
+        android:background="#00000000"
+        android:text="@string/firstSlide_title"
+        android:textAlignment="center"
+        android:textColor="#405da7"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

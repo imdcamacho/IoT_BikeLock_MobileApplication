@@ -12,10 +12,16 @@
     <string name="login_failed">"Login failed"</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-   <string name="rop_success">You can now park your Bike! Lock will be unlatched for 30 seconds.</string>
+    <string name="rop_success">You can now park your Bike! Lock will be unlatched for 30 seconds.</string>
     <string name="rop_successName">Juan Dela Cruz</string>
     <string name="rop_successDate">June 1, 2022</string>
     <string name="rop_successTime">Start time: 1:13 p.m.</string>
     <string name="bu_success">Request Success The lock will be unlatched for 15s</string>
     <string name="l1">The code you inputted is incorrect. An email is sent to your account. Please confirm your identity. Else, your account will be disabled for some time\nand will not be able to unlock your bike.\n\n\n\n\n</string>
+
+    <!-- GET-STARTED -->
+    <string name="firstSlide_title">Welcome to SAB!</string>
+    <string name="secondSlide_title">Secure-A-Bike: A QR Code Based Automated Bike Parking System</string>
+    <string name="blank"></string>
+    
 </resources>

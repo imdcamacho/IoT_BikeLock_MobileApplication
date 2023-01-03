@@ -10,4 +10,12 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="transparent_white">#cccccc</color>
+
+    //onboarding colors
+    <color name="background">#485784</color>
+    <color name="buttontext">#485784</color>
+
+    //indicator color
+    <color name="inactive">#FFFFFFFF</color>
+    <color name="active">#405DA7</color>
 </resources>
