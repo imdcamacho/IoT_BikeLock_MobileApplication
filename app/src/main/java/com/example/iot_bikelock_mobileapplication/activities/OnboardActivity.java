@@ -97,13 +97,14 @@ public class OnboardActivity extends AppCompatActivity implements View.OnClickLi
     @RequiresApi(api = Build.VERSION_CODES.M)
     public void setUpindicator(int position){
 
-        dots = new TextView[4];
+        dots = new TextView[3];
         mDotLayout.removeAllViews();
 
         for (int i = 0 ; i < dots.length ; i++){
 
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226"));
+            dots[i].setBackgroundColor(Color.TRANSPARENT);
             dots[i].setTextSize(35);
             dots[i].setTextColor(getResources().getColor(R.color.inactive,getApplicationContext().getTheme()));
             mDotLayout.addView(dots[i]);
