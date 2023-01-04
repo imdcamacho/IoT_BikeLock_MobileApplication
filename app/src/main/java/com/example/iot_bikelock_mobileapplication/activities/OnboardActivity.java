@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -15,15 +14,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.iot_bikelock_mobileapplication.R;
-import com.ramotion.paperonboarding.PaperOnboardingEngine;
-import com.ramotion.paperonboarding.PaperOnboardingPage;
-import com.ramotion.paperonboarding.listeners.PaperOnboardingOnChangeListener;
-import com.ramotion.paperonboarding.listeners.PaperOnboardingOnRightOutListener;
-
-import java.util.ArrayList;
 
 public class OnboardActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -75,7 +67,7 @@ public class OnboardActivity extends AppCompatActivity implements View.OnClickLi
                 if (getitem(0) < 3)
                     mSlideViewPager.setCurrentItem(getitem(1),true);
                 else {
-                    Intent i = new Intent(OnboardActivity.this,MainActivity.class);
+                    Intent i = new Intent(OnboardActivity.this, LoginActivity.class);
                     startActivity(i);
                     finish();
                 }
@@ -87,7 +79,7 @@ public class OnboardActivity extends AppCompatActivity implements View.OnClickLi
                 break;
             case R.id.skipButton:
             case R.id.startButton:
-                Intent i = new Intent(OnboardActivity.this, MainActivity.class);
+                Intent i = new Intent(OnboardActivity.this, LoginActivity.class);
                 startActivity(i);
                 finish();
                 break;
