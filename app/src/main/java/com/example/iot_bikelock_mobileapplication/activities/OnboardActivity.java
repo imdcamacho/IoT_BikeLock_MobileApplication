@@ -96,6 +96,7 @@ public class OnboardActivity extends AppCompatActivity implements View.OnClickLi
 
             dots[i] = new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226"));
+            dots[i].setBackgroundColor(Color.TRANSPARENT);
             dots[i].setTextSize(35);
             dots[i].setBackgroundColor(Color.TRANSPARENT);
             dots[i].setTextColor(getResources().getColor(R.color.inactive,getApplicationContext().getTheme()));

@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.iot_bikelock_mobileapplication.R;
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.journeyapps.barcodescanner.CaptureActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -31,9 +33,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.buttonScan:
-//                    startActivity(new Intent(MainActivity.this, ScanActivity.class));
-                    Intent QRScannerIntent = new Intent(MainActivity.this, ScanActivity.class);
-                    startActivity(QRScannerIntent);
+//
+                IntentIntegrator intentIntegrator= new IntentIntegrator(MainActivity.this);
+                intentIntegrator.setPrompt("For flash use volume up key");
+                intentIntegrator.setBeepEnabled(true);
+                intentIntegrator.setOrientationLocked(true);
+                intentIntegrator.setCaptureActivity(Capture.class);
+                intentIntegrator.initiateScan();
                 break;
             case R.id.buttonSlots:
                     startActivity(new Intent(MainActivity.this, BikeSlotsActivity.class));
