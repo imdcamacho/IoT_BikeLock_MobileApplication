@@ -143,7 +143,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             public void onResponse(JSONObject response) {
                                 /* shared prefs are done at repository method. */
                                 // move to activity for authenticated.
-                                gotoMainActivity();
+                                String authStatus = null;
+                                try {
+                                    authStatus = response.getString("auth_status");
+                                    gotoAuthActivity(authStatus);
+                                } catch (JSONException e) {
+                                    Toast.makeText(getApplicationContext(), "Error in parsing Authentication.", Toast.LENGTH_SHORT).show();
+                                    e.printStackTrace();
+                                }
                             }
                         },
                         null
@@ -154,8 +161,25 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         }
     }
 
-    private void gotoMainActivity() {
-        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+    /**
+     * direct UI to the appropriate activity based on authentication status.
+     *
+     * @param authStatus auth status returned by backend
+     */
+    private void gotoAuthActivity(String authStatus) {
+        Intent intent = null;
+        if (authStatus.equals("SUCCESS_INCOMPLETE_REGISTRATION")) {
+            intent = new Intent(LoginActivity.this, CompleteRegistrationActivity.class);
+        } else if (authStatus.equals("SUCCESS_UNVERIFIED")) {
+            // TODO direct user to awaiting verification screen.
+            intent = new Intent(LoginActivity.this, AwaitingVerificationActivity.class);
+        } else if (authStatus.equals("SUCCESS")) {
+            intent = new Intent(LoginActivity.this, MainActivity.class);
+        } else {
+            // error.
+            Toast.makeText(getApplicationContext(), "Invalid authentication status", Toast.LENGTH_LONG).show();
+            return;
+        }
         startActivity(intent);
         finish();
     }
